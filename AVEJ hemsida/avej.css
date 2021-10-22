@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'LuckiestGuy'; 
+    src: url('LuckiestGuy.ttf'); /*URL to font*/
+}
+
+body {
+	background-color: #41deff;
+}
+
+.bg {
+  position: fixed;
+  overflow: hidden;
+  z-index: -3;
+  bottom: 0;
+  margin-left: -20px;
+}
+
+
+.sliding-mountain {
+  background: url("bg.jpg") repeat-x;
+  height: 560px;
+  width: 6000px;
+  animation: slide 300s linear infinite;
+}
+
+@keyframes slide{
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(-1692px, 0, 0);
+  }
+}
+
+.cloud {
+  position: fixed;
+  overflow: hidden;
+  z-index: -2;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+.sliding-cloud {
+  background: url("cloud1.png") repeat-x;
+  height: 560px;
+  width: 5076px;
+  animation: slide2 90s linear infinite;
+}
+
+@keyframes slide2{
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(-1692px, 0, 0);
+  }
+}
+
+.movePlane {
+	position: fixed;
+	z-index: -1;
+	margin-top: 150px;
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+	animation-name: plane;
+	animation-duration: 40s ;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes plane { 
+	from {left: -600px;}
+	to {left: 1500px;}
+}
+
+.logoP {
+	width: 200px;
+	height: 200px;
+	margin-top: -65px;
+	margin-bottom: -70px;
+} 
+
+
+.title {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto; 
+	margin-right: auto; 
+	margin-top: -210px;
+	margin-bottom: 20px;
+
+}
+
+.moveSeal {
+	position: relative;
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+	animation-name: seal;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes seal {
+	0%   {left:0px; top:3px;}
+	50%  {left:0px; top:20px;}
+	100% {left:0px; top:3px;}
+}
+
+
+
+.download {
+	position: relative;
+	padding-right: 20px;
+	padding-top: 100px;
+}
+.glg {
+	width: 300px;
+	margin-right: 20px;
+
+}
+
+.app {
+	position: relative;
+	width: 300px;
+
+}
+
+.flw {
+	padding-right: 200px;
+}
+
+.about {
+	background: rgba(255, 255, 255, 0.3);
+	margin-top: 25px;
+	border-radius: 10px;
+	
+	
+}
+#aboutPic {
+	margin-top: -22px;
+	margin-bottom: -20px;
+
+}
+
+h1 {
+	font-family: LuckiestGuy;
+	text-align: center;
+}
+h2 {
+	font-family: helvetica;
+}
+
+h4 {
+	font-family: arial;
+
+}
+
+.grey {
+	color:grey;
+}
+
+#info {
+	margin-left: 10px;
+
+}
+
+#moreGames {
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 10px;
+	width: 600px;
+	height: 100px;
+}
